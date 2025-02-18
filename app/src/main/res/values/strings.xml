@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Almaneque</string>
+    <string name="title">ALMANEQUE</string>
+    <string name="slogan">La comunidad más Verde</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="create_account">Create an account</string>
+    <string name="create_account_view_title">Create Your Account</string>
+    <string name="back">Back</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="username">Username</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="direction">Direction</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="create_account_view_button">Create Account</string>
+    <string name="imagen_de_perfil_descripcion">IMAGEN DE PERFIL</string>
+    <string-array name="avatar_options">
+        <item>Avatar 1</item>
+        <item>Avatar 2</item>
+        <item>Avatar 3</item>
+        <item>Avatar 4</item>
+        <item>Avatar 5</item>
+        <item>Avatar 6</item>
+    </string-array>
+    <string-array name="filter_options">
+        <item>No Filter</item>
+        <item>A-Z</item>
+        <item>Chronological</item>
+    </string-array>
+    <string-array name="categories_array">
+        <item>Todas las categorías</item>
+        <item>Cuidado</item>
+        <item>Interiores</item>
+        <item>Crecimiento</item>
+        <item>Decoracion</item>
+        <item>Condiciones</item>
+        <item>Registro Personal</item>
+        <item>Plagas</item>
+        <item>Soluciones</item>
+        <item>Diseño y creatividad</item>
+    </string-array>
+    <string-array name="sort_array">
+        <item>Sin filtro</item>
+        <item>Más recientes</item>
+        <item>Orden alfabético</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_account_view_title">EDIT YOUR ACCOUNT</string>
+    <string name="edit_account_view_button">Edit Account</string>
+    <string name="profile_view_title">PROFILE</string>
+    <string name="create_post_view_title">MAKE A POST</string>
+    <string name="create_post_view_button">Create Post</string>
+    <string name="edit_post_view_button">Post</string>
+    <string name="edit_post_view_title">EDIT</string>
+    <string name="draft_view_title">DRAFT</string>
+    <string name="note_view_title">NOTES</string>
+    <string name="create_note_view_title">CREATE A NOTE</string>
+    <string name="create_note_view_button">Create Note</string>
+    <string name="edit_note_view_button">EDIT NOTE</string>
+    <string name="edit_note_view_title">EDIT NOTE</string>
+</resources>

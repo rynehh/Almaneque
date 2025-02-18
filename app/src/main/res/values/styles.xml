@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:listPreferredItemHeightSmall">48dp</item>
+        <item name="android:listPreferredItemPaddingLeft">16dp</item>
+        <item name="android:listPreferredItemPaddingRight">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <!-- Espacio entre items -->
+        <item name="android:layout_marginVertical">8dp</item>
+    </style>
+    <style name="CenteredPopupMenuText" >
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/text_box</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginVertical">8dp</item>
+    </style>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plant_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Header con el botón de retroceso y el título -->
+        <LinearLayout
+            android:id="@+id/CNHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/brown"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Botón de retroceso -->
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/back"
+                android:src="@drawable/back"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="4dp" />
+
+            <!-- Título -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="@string/create_note_view_title"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/CNHeader"
+            android:padding="16dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/dark_green"
+                    android:padding="16dp"
+                    >
+
+
+                    <!-- Campo para el título del post -->
+                    <EditText
+                        android:id="@+id/titleEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Plant Name"
+                        android:textSize="20sp"
+                        android:padding="12dp"
+                        android:background="@drawable/text_box"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/black" />
+                    <EditText
+                        android:id="@+id/wateringEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Watering"
+                        android:textSize="15sp"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/text_box"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/black" />
+                    <EditText
+                        android:id="@+id/lightEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Light"
+                        android:textSize="15sp"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/text_box"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/black" />
+
+                    <EditText
+                        android:id="@+id/fertilizationEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Fertilization"
+                        android:textSize="15sp"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/text_box"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/black" />
+                    <EditText
+                        android:id="@+id/weatherEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Weather"
+                        android:textSize="15sp"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/text_box"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/black" />
+
+                    <EditText
+                        android:id="@+id/extraInfoEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="Write here any important information"
+                        android:gravity="top"
+                        android:minLines="6"
+                        android:background="@drawable/text_box"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/black"
+                        android:padding="12dp" />
+
+
+
+
+
+                </LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCreatePost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:backgroundTint="#2B5711"
+                    android:text="@string/create_note_view_button"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:title="My Profile"
+            />
+
+        <item
+            android:id="@+id/nav_notes"
+            android:title="My Notes"
+            android:layout_marginTop="16dp"/>
+    </group>
+
+    <!-- Este item vacío empujará el grupo de abajo hasta el final -->
+    <group android:id="@+id/group_spacer">
+        <item
+            android:id="@+id/nav_spacer"
+            android:title="">
+            <menu>
+                <item android:title="">
+                    <menu>
+                        <item android:title=""/>
+                    </menu>
+                </item>
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/group_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Log Out"/>
+    </group>
+</menu>
